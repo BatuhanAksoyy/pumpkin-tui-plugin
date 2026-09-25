@@ -1,0 +1,5 @@
+/target
+
+# The plugin crate is its own workspace.
+/plugin/target
+/plugin/Cargo.lock

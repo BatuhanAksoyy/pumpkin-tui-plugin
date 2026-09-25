@@ -1,0 +1,48 @@
+[package]
+name = "pumpkin-tui-plugin"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+description = "Full-screen terminal console for Pumpkin, loaded as a native plugin."
+license = "MIT"
+authors = ["BatuhanAksoyy"]
+repository = "https://github.com/BatuhanAksoyy/pumpkin-tui-plugin"
+
+# Native plugins are dynamic libraries loaded by Pumpkin's `NativePluginLoader`.
+[lib]
+crate-type = ["cdylib"]
+
+# [profile.release]
+# lto = true
+
+[dependencies]
+pumpkin-tui = { path = ".." }
+
+# A native plugin links the server itself, so this must point at the *same*
+# Pumpkin source tree the server binary was built from. Rust has no stable ABI:
+# a mismatch here is a load failure at best.
+pumpkin = { path = "../../Pumpkin/crates/pumpkin" }
+pumpkin-api-macros = { path = "../../Pumpkin/crates/pumpkin-api-macros" }
+pumpkin-world = { path = "../../Pumpkin/crates/pumpkin-world" }
+
+# Required by `#[plugin_impl]`, which declares a `GLOBAL_RUNTIME`. We never run
+# anything on it — see the note about the library boundary in src/lib.rs — so
+# the feature set only has to be enough for `Runtime::new()`.
+tokio = { version = "1.53", features = ["rt-multi-thread"] }
+tracing = "0.1.44"
+libc = "0.2"
+# Same crate and features the server formats its own log timestamps with, so the
+# console's echoed commands carry an identical stamp.
+time = { version = "0.3", default-features = false, features = ["std", "formatting", "parsing", "local-offset", "macros"] }
+sysinfo = { version = "0.39", default-features = false, features = ["system"] }
+
+# Keep this crate out of the parent package's build: it is only compiled when
+# a matching Pumpkin checkout is present.
+[workspace]
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"

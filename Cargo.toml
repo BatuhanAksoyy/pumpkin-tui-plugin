@@ -1,0 +1,21 @@
+[package]
+name = "pumpkin-tui"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "A terminal console UI for Minecraft servers: live log, status header, player list, and a completing command line."
+license = "MIT"
+repository = "https://github.com/BatuhanAksoyy/pumpkin-tui-plugin"
+keywords = ["tui", "console", "minecraft", "ratatui", "pumpkin"]
+categories = ["command-line-interface", "game-development"]
+
+[dependencies]
+ratatui = "0.30.2"
+unicode-width = "0.2.2"
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
