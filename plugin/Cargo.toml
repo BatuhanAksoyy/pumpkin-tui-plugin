@@ -12,8 +12,10 @@ repository = "https://github.com/BatuhanAksoyy/pumpkin-tui-plugin"
 [lib]
 crate-type = ["cdylib"]
 
-# [profile.release]
-# lto = true
+# Link-time optimisation across the whole graph: smaller artifact, and worth
+# the build time for something that ships as a binary.
+[profile.release]
+lto = true
 
 [dependencies]
 pumpkin-tui = { path = ".." }
