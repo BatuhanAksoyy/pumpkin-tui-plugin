@@ -193,17 +193,3 @@ hand `Console::with_theme` any palette it likes.
 A host that has redirected its own stdout — as the plugin does, to capture log
 output — draws with `Console::run_on(writer)` instead of `Console::run()`, and
 hands the terminal back with `restore_on(writer)`.
-
-## Tests
-
-```sh
-cargo test        # unit tests plus TestBackend render smoke tests
-cargo clippy --all-targets
-```
-
-The render tests draw the full layout at sizes from 1×1 up, so a resized
-terminal cannot panic the console.
-
-## License
-
-MIT
