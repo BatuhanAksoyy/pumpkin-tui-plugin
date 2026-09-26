@@ -17,26 +17,7 @@ here.
 
 ## What it looks like
 
-```
-┏ Pumpkin ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ 1.21.9  │  up 01:02:05  │  players 1/20  │  tps 20.00  │  mspt 17.5  │  m  ▂▂▂▂▃▃▂       ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-┏ log ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ≥DEBUG ┓┏ players 1 ━━━━━━━━━━━━━━━━━┓
-┃12:03:41 INFO  net: Notch joined the game                   ┃┃● Notch overworld 42ms      ┃
-┃08:06:36 INFO  net: Listening on 0.0.0.0:25565 (Java)       ┃┃                            ┃
-┃08:06:37 INFO  console: > say                               ┃┃                            ┃
-┃08:06:37 INFO  Unknown command: say.                        ┃┃                            ┃
-┃say<--[HERE]                                                ┃┃                            ┃
-┃08:06:39 DEBUG world: Saved 46 chunks in 11ms               ┃┃                            ┃
-┃08:06:40 IN┏━━━━━━━━━━┓ > say hello everyone                ┃┃                            ┃
-┃08:06:44 WA┃▌survival ┃Can't keep up! Did the system time   ┃┃                            ┃
-┃           ┃ creative ┃                                     ┃┃                            ┃
-┗━━━━━━━━━━━┗━━━━━━━━━━┛━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-┏ command ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃❯ gamemode                                                                                ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- Tab complete   ↑↓ history   F1 help   F2 players   F3 search   F4 level
-```
+<img width="1915" height="1042" alt="image" src="https://github.com/user-attachments/assets/c6ce4113-c2b7-40d8-b6f7-c3e3c5c7bf64" />
 
 (Not a sketch — that is the real frame, dumped from the renderer. The completion
 popup floats above the prompt, anchored to the word being completed, so it
