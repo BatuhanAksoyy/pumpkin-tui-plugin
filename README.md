@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Pumpkin TUI — a terminal UI for your Pumpkin server" width="900">
+</p>
+
 # pumpkin-tui
 
 A terminal console for Minecraft servers, built on [ratatui](https://ratatui.rs).

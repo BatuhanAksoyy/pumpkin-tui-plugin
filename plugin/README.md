@@ -1,3 +1,5 @@
+<img src="../assets/icon-64.png" alt="" width="48" align="left" hspace="12">
+
 # pumpkin-tui-plugin
 
 `pumpkin-tui` as a **native Pumpkin plugin** — no fork of the server, no patch
