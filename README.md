@@ -15,18 +15,10 @@ completion queries through a trait, and reads back what the operator typed.
 [`plugin/`](plugin/README.md) is the Pumpkin host, and the only one that ships
 here.
 
-## Try it
-
-```sh
-cargo run --example demo
-```
-
-The example is a fake server — it ticks, logs, gains and loses players, and
-answers `help`, `list`, `say`, `gamemode`, `kick`, `teleport`, `weather`,
-`time`, `seed` and `stop`.
+## What it looks like
 
 ```
-┏ Pumpkin (demo) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┏ Pumpkin ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 1.21.9  │  up 01:02:05  │  players 1/20  │  tps 20.00  │  mspt 17.5  │  m  ▂▂▂▂▃▃▂       ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ┏ log ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ≥DEBUG ┓┏ players 1 ━━━━━━━━━━━━━━━━━┓

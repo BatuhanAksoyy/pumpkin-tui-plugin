@@ -769,7 +769,7 @@ mod tests {
             },
         );
         app.completion.open = true;
-        app.config.title = "Pumpkin (demo)".to_owned();
+        app.config.title = "Pumpkin".to_owned();
         app.status.tps = 20.0;
         app.status.mspt = 17.5;
         app.mspt_samples.extend([14, 18, 15, 15, 19, 20, 16]);
