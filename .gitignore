@@ -3,3 +3,6 @@
 # The plugin crate is its own workspace.
 /plugin/target
 /plugin/Cargo.lock
+
+# Draft copy for the plugin listing; not repository content.
+/PLUGIN_PAGE.md
